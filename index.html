@@ -22,9 +22,55 @@
           </div>
           <h1>Enrollment form</h1>
           <p>
-            Fill in the data below to enroll your child in the Estrelas do
-            Amanhã early childhood school.
+            Fill in the data below to enroll your child in the Stars of
+            Tomorrow early childhood school.
           </p>
+
+          <form action="" method="post" enctype="multipart/form-data">
+            <fieldset class="child-info">
+              <legend>Child info</legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Full name</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Lyza Perry"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="birth">Date of birth</label>
+                <input type="date" name="birth" id="birth" />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                  <option value="female">Female</option>
+                  <option value="male">male</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Medical info</label>
+                <textarea
+                  name="medical-info"
+                  id="medical-info"
+                  cols="30"
+                  rows="10"
+                  placeholder="Medical infos"
+                ></textarea>
+              </div>
+
+              <div class="droparea-wrapper">
+                <label for="birth-file">Birth certificate</label>
+                <input type="file" name="birth-file" id="birth-file">
+              </div>
+
+            </fieldset>
+          </form>
         </div>
       </main>
 
